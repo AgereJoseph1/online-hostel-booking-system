@@ -1,0 +1,25 @@
+[project]
+name = "hostel-backend"
+version = "0.1.0"
+description = "Backend for online hostel booking system"
+requires-python = ">=3.11"
+
+[project.dependencies]
+fastapi = "^0.115.0"
+uvicorn = "^0.32.0"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+python-multipart = "^0.0.9"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+email-validator = "^2.2.0"
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx", "pytest-asyncio"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
